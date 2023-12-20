@@ -1,9 +1,9 @@
-const PostModel = require("../models/Posts.model");
+const PostsModel = require("../models/Posts.model");
 
-const createPost = async (content) => {
-  return await PostModel.create({ content });
+const createPosts = async (content) => {
+  return await PostsModel.create({ content });
 };
 
 module.exports = {
-  createPost,
+  createPosts,
 };

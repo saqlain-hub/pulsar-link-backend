@@ -1,7 +1,7 @@
-const { createPost } = require("../services/Posts.service");
+const { createPosts } = require("../services/Posts.service");
 
-exports.createPost = async (req, res, next) => {
+exports.createPosts = async (req, res, next) => {
   const { content } = req.body;
-  const user = await createPost(content);
-  res.json(user);
+  const post = await createPosts(content);
+  res.json(post);
 };
