@@ -14,5 +14,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
+app.use("/comments", commentsRoutes);
 
 module.exports = app;

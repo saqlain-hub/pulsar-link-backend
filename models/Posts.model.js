@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const PostsSchema = new mongoose.Schema({
   content: String,
   timestamp: { type: Date, default: Date.now },
-  author: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  author: { type: mongoose.Schema.Types.ObjectId, ref: "Users" },
   // comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   // reactions: [{ type: Schema.Types.ObjectId, ref: 'Reaction' }],
 });
